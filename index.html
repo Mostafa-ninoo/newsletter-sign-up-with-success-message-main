@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <main>
+    <div class="start">
+      <div class="signup-image">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign-up-mobile">
+      </div>
+      <div class="main-div">
+        <h1> Stay updated!</h1>
+        <span class="second-header">Join 60,000+ product managers receiving
+          <span class="inside">monthly updates on:</span></span>
+        <div class="item-container">
+          <div class="items">
+            <img src="assets/images/icon-list.svg" alt="icon-list">
+            <span> Product discovery and building what matters</span>
+          </div>
+          <div class="items">
+            <img src="assets/images/icon-list.svg" alt="icon-list">
+            <span>Measuring to ensure updates are a success</span>
+          </div>
+          <div class="items">
+            <img src="assets/images/icon-list.svg" alt="icon-list">
+            <span>And much more!</span>
+          </div>
+        </div>
+        <div id="for-label">
+          <label for="email-text">Email address</label>
+          <span id="error">Valid email required</span>
+        </div>
+        <form class="input-container">
+          <input type="text" id="email-text" placeholder="email@company.com" required>
+          <button id="btn" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <div class="end">
+      <img src="assets/images/icon-success.svg" alt="icon-success">
+      <h2>Thanks for
+        subscribing!</h2>
+      <p>A confirmation email has been sent to
+        <span class="bold-email">ash@loremcompany.com</span>.Please open it and
+        click the button inside to confirm your
+        subscription.
+      </p>
+      <button id="dismiss">Dismiss message</button>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: white;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 713px;
+}
+
+h1 {
+    color: hsl(234, 29%, 20%);
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+
+.second-header {
+    color: hsl(234, 29%, 20%);
+    margin-left: 1rem;
+    white-space: pre-line;
+    font-weight: bold;
+}
+
+.inside {
+    margin-left: 1rem;
+}
+
+.items {
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.items img {
+    margin-left: 1rem;
+    margin-right: .5rem;
+}
+
+.items span {
+    font-size: .85rem;
+    font-weight: bold;
+    color: hsl(235, 18%, 26%);
+}
+
+#for-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+label {
+    color: hsl(235, 18%, 26%);
+    font-weight: bold;
+    font-size: .8rem;
+
+}
+
+#error {
+    color: hsl(4, 100%, 67%);
+    visibility: hidden;
+    font-size: .8rem;
+    margin-right: 2rem;
+    margin-left: 4rem;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    margin-left: 1rem;
+    height: 9rem;
+}
+
+#email-text {
+    height: 3.5rem;
+    border-radius: .5rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding-left: 1.5rem;
+}
+
+.place::placeholder {
+    color: hsl(4, 100%, 67%);
+}
+
+#email-text:hover {
+    cursor: pointer;
+}
+
+#btn {
+    height: 3.5rem;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: .5rem;
+    color: white;
+    border: none;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%), orangered);
+    background-repeat: no-repeat;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 713px;
+    padding-left: 1rem;
+    display: none;
+}
+
+.end img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 10rem;
+}
+
+.end h2 {
+    color: hsl(234, 29%, 20%);
+    white-space: pre-line;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.end p {
+    white-space: pre-line;
+    color: hsl(235, 18%, 26%);
+    margin-top: 1rem;
+}
+
+.bold-email {
+    font-weight: bold;
+}
+
+#dismiss {
+    width: 90%;
+    margin-top: 9rem;
+    background-color: hsl(234, 29%, 20%);
+}
+
+#dismiss:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%), orangered);
+    background-repeat: no-repeat;
+    border: none;
+}
+
+
+@media screen and (min-width: 23.5rem) {
+    body {
+        height: 100%;
+        background-color: hsl(235, 18%, 26%);
+    }
+
+    main {
+        height: 44.5625em;
+        width: 90em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .start {
+        flex-direction: row-reverse;
+        width: 54em;
+        background-color: white;
+        height: 31.5em;
+        border-radius: 1.5em;
+    }
+
+    .signup-image {
+        height: 30em;
+        width: 30em;
+        background-image: url(assets/images/illustration-sign-up-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 3em 1em;
+        background-size: 30em 33em;
+    }
+
+    .signup-image img {
+        display: none;
+    }
+
+    h1 {
+        margin-left: 1em;
+        margin-top: 1.5em;
+    }
+
+    .second-header {
+        margin-left: 2.5em;
+        white-space: pre-line;
+        font-weight: normal;
+    }
+
+    .inside {
+        margin-left: 2.5em;
+    }
+
+    .items {
+        width: 100%;
+        margin-top: .5em;
+    }
+
+    .items img {
+        margin-left: 2.5em;
+        margin-right: .5rem;
+        width: 1em;
+        height: 1em;
+    }
+
+    .items span {
+        font-weight: normal;
+    }
+
+    label {
+        margin-left: 3em;
+    }
+
+    #error {
+        margin-left: 8em;
+    }
+
+    .input-container {
+        width: 90%;
+        margin-left: 2em;
+        height: 7em;
+    }
+
+    #email-text {
+        height: 2.5em;
+    }
+
+    #btn {
+        height: 3.5em;
+        font-size: .7em;
+    }
+
+    .end {
+        padding-left: 1rem;
+        display: none;
+        background-color: white;
+        width: 40em;
+        height: 40em;
+        border-radius: 3em;
+    }
+
+    .end img {
+        width: 5em;
+        height: 5em;
+        margin-top: 5em;
+        margin-left: 6em;
+    }
+
+    .end h2 {
+        font-size: 4em;
+        margin-top: .5em;
+        margin-left: 1.5em;
+        line-height: 1em;
+    }
+
+    .end p {
+        white-space: normal;
+        margin-top: 2em;
+        font-size: 1.5em;
+        margin-left: 4em;
+    }
+
+    #dismiss {
+        width: 80%;
+        margin-top: 2em;
+        margin-left: 5em;
+        height: 4em;
+        font-size: 1em;
+        border-radius: .8em;
+        margin-bottom: 2em;
+        letter-spacing: .25em;
+    }
+}
